@@ -1,14 +1,16 @@
 # SSHUserManagement
 این بات برای مدیریت یوزر های سرور SSH نوشته شده :
 در قدم اول ربات خود را تولید کنید همچنین دستورات زیر را هم در ربات تلگرام تعریف کنید 
+```Bot-Command-Config
 create - create ssh user
 delete -delete userid
 userinfo - Get User info
-
+```
 
 در قدم بعدی فایل appsettings.json را شخصی سازی کنید و پروژه را به ربات خود متصل کنید (در نظر داشته باشید روی سرور میبایست root باشید)
 
 در قدم بعدی این اسکریپت هم روی SQLServer اجرا کنید 
+```SQL
  SET ANSI_NULLS ON
 GO
 
@@ -26,7 +28,7 @@ CREATE TABLE [dbo].[Users](
 	[IsDeleted] [BIT] NULL
 ) ON [PRIMARY]
 GO
-
+```
 
 
 
